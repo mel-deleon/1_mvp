@@ -6,6 +6,8 @@ The result of this development project is an application for reading current new
 
 - Frontend with **React**
 - Third party **API** integration. Source: [News API](https://newsapi.org/)
+- Important! When a news item is accessed (by clicking the "Read" button) the content of the news item is incomplete or does not exist. This is due to the API format used for the development of the project (incomplete or nonexistent content).
+  The original idea was to use the url of each news and go to the website when clicking the "Read" button. Later this idea was changed and a new component was created for the visualization of each news.
 
 ## Future features
 
