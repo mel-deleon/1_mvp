@@ -2,13 +2,6 @@ import React, { Component } from 'react'
 
 class Navbar extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-
-    }
-  }
-
   handleInputChange(event) { //I catch the value of the input directly
     this.props.updateSearch(event.target.value) //PROPS!
   }
@@ -17,9 +10,12 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="navbar-brand font-weight-bold text-success" href="#"><i class="far fa-newspaper"></i> {this.props.title}</div>
+        <div className="navbar-brand font-weight-bold text-success" href="#"><i className="far fa-newspaper"></i> {this.props.title}</div>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-        <div className="collapse navbar-collapse" id="navbarColor03">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
               <a className="nav-link" href="../App.js">Home <span className="sr-only">(current)</span></a>
